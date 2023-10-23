@@ -5,10 +5,15 @@ import HelloWorld from "./components/1compProps/HelloWorld";
 import MapProps from "./components/1compProps/MapProps";
 import TakeProp from "./components/1compProps/TakeProp";
 import ThreeProps from "./components/1compProps/ThreeProps";
+import APISimulator from "./components/2estadoECiclo/APISimulator";
 import Clock from "./components/2estadoECiclo/Clock";
 import MultState from "./components/2estadoECiclo/MultState";
 import ToDo from "./components/2estadoECiclo/ToDo";
 import Toggle from "./components/2estadoECiclo/Toggle";
+import VerifyWidth from "./components/2estadoECiclo/VerifyWidth";
+import DinamicForm from "./components/3eventsForms/DinamicForm";
+import FormRegister from "./components/3eventsForms/FormRegister";
+import ValidationForm from "./components/3eventsForms/ValidationForm";
 
 // const members = [
 //   {
@@ -31,10 +36,8 @@ import Toggle from "./components/2estadoECiclo/Toggle";
 function App() {
   return (
     <>
-      {/* <Toggle /> */}
-      {/* <MultState /> */}
-      {/* <Clock /> */}
-      <ToDo />
+      {/* <FormRegister /> */}
+      <ValidationForm />
     </>
   );
 }
