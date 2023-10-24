@@ -14,6 +14,7 @@ import VerifyWidth from "./components/2estadoECiclo/VerifyWidth";
 import DinamicForm from "./components/3eventsForms/DinamicForm";
 import FileUploader from "./components/3eventsForms/FileUploader";
 import FormRegister from "./components/3eventsForms/FormRegister";
+import MultSteps from "./components/3eventsForms/MultSteps";
 import ValidationForm from "./components/3eventsForms/ValidationForm";
 
 // const members = [
@@ -39,7 +40,8 @@ function App() {
     <>
       {/* <FormRegister /> */}
       {/* <ValidationForm /> */}
-      <FileUploader />
+      {/* <FileUploader /> */}
+      <MultSteps />
     </>
   );
 }
