@@ -12,6 +12,7 @@ import ToDo from "./components/2estadoECiclo/ToDo";
 import Toggle from "./components/2estadoECiclo/Toggle";
 import VerifyWidth from "./components/2estadoECiclo/VerifyWidth";
 import DinamicForm from "./components/3eventsForms/DinamicForm";
+import FileUploader from "./components/3eventsForms/FileUploader";
 import FormRegister from "./components/3eventsForms/FormRegister";
 import ValidationForm from "./components/3eventsForms/ValidationForm";
 
@@ -37,7 +38,8 @@ function App() {
   return (
     <>
       {/* <FormRegister /> */}
-      <ValidationForm />
+      {/* <ValidationForm /> */}
+      <FileUploader />
     </>
   );
 }
