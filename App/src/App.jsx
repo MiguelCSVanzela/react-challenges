@@ -1,11 +1,13 @@
 import "./App.css";
 import Button from "./components/4estilizacao/Button";
 import HelloWorld from "./components/4estilizacao/HelloWorld";
+import LightDark from "./components/4estilizacao/LightDark";
 function App() {
   return (
     <div>
       {/* <HelloWorld /> */}
-      <Button />
+      {/* <Button /> */}
+      <LightDark />
     </div>
   );
 }
