@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const HelloWorldStyled = () => {
+const HelloWorld = () => {
   const style = {
     color: "red",
     fontSize: "20px",
@@ -13,4 +13,4 @@ const HelloWorldStyled = () => {
   );
 };
 
-export default HelloWorldStyled;
+export default HelloWorld;

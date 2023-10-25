@@ -1,9 +1,11 @@
 import "./App.css";
-import HelloWorldStyled from "./components/4estilizacao/HelloWorldStyled";
+import Button from "./components/4estilizacao/Button";
+import HelloWorld from "./components/4estilizacao/HelloWorld";
 function App() {
   return (
     <div>
-      <HelloWorldStyled />
+      {/* <HelloWorld /> */}
+      <Button />
     </div>
   );
 }
