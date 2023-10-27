@@ -1,0 +1,24 @@
+$card-background: '#fcfcfc'; 
+$border-radius: 8px; 
+
+.card{
+    border: none; 
+    border-radius: $border-radius; 
+    color: darkgray; 
+    background-color: $card-background;
+    padding: 20px 40px; 
+    
+    .card-title{
+        font-size: 2em; 
+        font-weight: bold; 
+        color: lightseagreen; 
+        text-decoration: underline; 
+    }
+
+    .card-content{
+        text-align: center; 
+        color: darkgreen; 
+        font-weight: lighter; 
+    }
+
+}
