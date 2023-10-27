@@ -1,20 +1,11 @@
 import "./App.css";
-import Button from "./components/4estilizacao/Button";
-import HelloWorld from "./components/4estilizacao/HelloWorld";
-import LightDark from "./components/4estilizacao/LightDark";
-import SassComponent from "./components/4estilizacao/SassComponent";
-import StyleComponent from "./components/4estilizacao/StyleComponent";
+import { Outlet } from "react-router-dom";
+import NavBar from "./components/5Roteamento/NavBar";
 function App() {
   return (
     <div>
-      {/* <HelloWorld /> */}
-      {/* <Button /> */}
-      {/* <LightDark /> */}
-      {/* <StyleComponent /> */}
-      <SassComponent
-        title="Meu Elemento Com SASS"
-        content="Todo o Conteudo que precisas saber"
-      />
+      <NavBar />
+      <Outlet />
     </div>
   );
 }
