@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import BuscaForm from "./BuscaForm";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
           <Link to="/Amigos">Amigos</Link>
         </li>
       </ul>
+      <BuscaForm />
     </div>
   );
 };

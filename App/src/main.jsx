@@ -10,12 +10,14 @@ import User from "./components/5Roteamento/User.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Historia from "./components/5Roteamento/user-links/historia.jsx";
 import Amigos from "./components/5Roteamento/user-links/amigos.jsx";
+import NaoEncontrado from "./components/5Roteamento/NaoEncontrado.jsx";
 
 // Roteamento Basico
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <NaoEncontrado />,
     children: [
       {
         path: "/",
@@ -40,6 +42,10 @@ const router = createBrowserRouter([
       {
         path: "/Amigos",
         element: <Amigos />,
+      },
+      {
+        path: "/busca",
+        element: <Busca />,
       },
     ],
   },
