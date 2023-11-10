@@ -1,35 +1,43 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Navigate,
+} from "react-router-dom";
+
 import App from "./App.jsx";
+import NotFound from "./components/routing/NotFound.jsx";
+import Home from "./components/routing/Home.jsx";
+import Contact from "./components/routing/Contact.jsx";
+import About from "./components/routing/About.jsx";
+import User from "./components/routing/User.jsx";
+import History from "./components/routing/user-links/History.jsx";
+import Friends from "./components/routing/user-links/Friends.jsx";
+import Search from "./components/routing/Search.jsx";
+
 import "./index.css";
-import Home from "./components/5Roteamento/Home.jsx";
-import Contato from "./components/5Roteamento/Contato.jsx";
-import Sobre from "./components/5Roteamento/Sobre.jsx";
-import User from "./components/5Roteamento/User.jsx";
 
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Historia from "./components/5Roteamento/user-links/historia.jsx";
-import Amigos from "./components/5Roteamento/user-links/amigos.jsx";
-import NaoEncontrado from "./components/5Roteamento/NaoEncontrado.jsx";
-
-// Roteamento Basico
+// Routing
+const isAuth = true;
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    errorElement: <NaoEncontrado />,
+    errorElement: <NotFound />,
     children: [
       {
         path: "/",
         element: <Home />,
       },
       {
-        path: "/contato",
-        element: <Contato />,
+        path: "/contact",
+        element: <Contact />,
       },
       {
-        path: "/sobre",
-        element: <Sobre />,
+        path: "/about",
+        // Authentication
+        element: isAuth ? <About /> : <Navigate to="/" />,
       },
       {
         path: "/user/:userId",
@@ -37,15 +45,15 @@ const router = createBrowserRouter([
       },
       {
         path: "/historia",
-        element: <Historia />,
+        element: <History />,
       },
       {
-        path: "/Amigos",
-        element: <Amigos />,
+        path: "/friends",
+        element: <Friends />,
       },
       {
-        path: "/busca",
-        element: <Busca />,
+        path: "/search",
+        element: <Search />,
       },
     ],
   },

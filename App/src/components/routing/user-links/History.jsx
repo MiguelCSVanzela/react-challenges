@@ -1,9 +1,9 @@
-const Historia = () => {
+const History = () => {
   return (
     <div>
-      <h2>História do usuário</h2>
+      <h2>My personal journey</h2>
     </div>
   );
 };
 
-export default Historia;
+export default History;
