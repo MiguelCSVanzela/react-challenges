@@ -1,14 +1,16 @@
 import "./App.css";
-import Greeting from "./components/conditionals/Greeting";
-import MultiSelection from "./components/conditionals/MultiSelection";
-import NestedList from "./components/conditionals/NestedList";
-import Switch from "./components/conditionals/Switch";
-import Ternary from "./components/conditionals/Ternary";
+import Counter from "./components/statemanagement/Counter";
+import { Provider } from "react-redux";
+import store from "./store";
 // import { Outlet } from "react-router-dom";
 // import NavBar from "./components/routing/NavBar";
 
 function App() {
-  return <MultiSelection />;
+  return (
+    <Provider store={store}>
+      <Counter />
+    </Provider>
+  );
 }
 
 export default App;
