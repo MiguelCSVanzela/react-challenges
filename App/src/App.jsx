@@ -1,4 +1,5 @@
 import "./App.css";
+import Greeting from "./components/conditionals/Greeting";
 import NestedList from "./components/conditionals/NestedList";
 import Switch from "./components/conditionals/Switch";
 import Ternary from "./components/conditionals/Ternary";
@@ -6,7 +7,7 @@ import Ternary from "./components/conditionals/Ternary";
 // import NavBar from "./components/routing/NavBar";
 
 function App() {
-  return <NestedList />;
+  return <Greeting />;
 }
 
 export default App;
