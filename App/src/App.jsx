@@ -1,17 +1,23 @@
 import "./App.css";
-import { Outlet } from "react-router-dom";
-import NavBar from "./components/routing/NavBar";
+import NestedList from "./components/conditionals/NestedList";
+import Switch from "./components/conditionals/Switch";
+import Ternary from "./components/conditionals/Ternary";
+// import { Outlet } from "react-router-dom";
+// import NavBar from "./components/routing/NavBar";
 
 function App() {
-  return (
-    <div>
-      <NavBar />
-      <Outlet />
-    </div>
-  );
+  return <NestedList />;
 }
 
 export default App;
+// function App() {
+//   return (
+//     <div>
+//       <NavBar />
+//       <Outlet />
+//     </div>
+//   );
+// }
 
 // const members = [
 //   {
