@@ -2,14 +2,21 @@ import "./App.css";
 import Counter from "./components/statemanagement/Counter";
 import { Provider } from "react-redux";
 import store from "./store";
+import { TaskProvider } from "./context/TaskContext";
+import TaskForm from "./components/statemanagement/TaskForm";
+import TaskList from "./components/statemanagement/TaskList";
 // import { Outlet } from "react-router-dom";
 // import NavBar from "./components/routing/NavBar";
 
 function App() {
   return (
-    <Provider store={store}>
-      <Counter />
-    </Provider>
+    // <Provider store={store}>
+    //   <Counter />
+    // </Provider>
+    <TaskProvider>
+      <TaskForm />
+      <TaskList />
+    </TaskProvider>
   );
 }
 
