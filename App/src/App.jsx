@@ -7,16 +7,23 @@ import TaskForm from "./components/statemanagement/TaskForm";
 import TaskList from "./components/statemanagement/TaskList";
 // import { Outlet } from "react-router-dom";
 // import NavBar from "./components/routing/NavBar";
-
+import postStore from "./context/posts/store";
+import PostList from "./components/statemanagement/PostList";
+import MyForm from "./components/statemanagement/MyForm";
 function App() {
   return (
     // <Provider store={store}>
     //   <Counter />
     // </Provider>
-    <TaskProvider>
-      <TaskForm />
-      <TaskList />
-    </TaskProvider>
+    // <TaskProvider>
+    //   <TaskForm />
+    //   <TaskList />
+    // </TaskProvider>
+
+    // <Provider store={postStore}>
+    //   <PostList />
+    // </Provider>
+    <MyForm />
   );
 }
 
