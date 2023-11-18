@@ -10,6 +10,7 @@ import TaskList from "./components/statemanagement/TaskList";
 import postStore from "./context/posts/store";
 import PostList from "./components/statemanagement/PostList";
 import MyForm from "./components/statemanagement/MyForm";
+import Greeting from "./components/testes/Greeting";
 function App() {
   return (
     // <Provider store={store}>
@@ -23,7 +24,8 @@ function App() {
     // <Provider store={postStore}>
     //   <PostList />
     // </Provider>
-    <MyForm />
+    // <MyForm />
+    <Greeting name="Miguel" />
   );
 }
 
